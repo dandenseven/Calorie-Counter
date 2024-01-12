@@ -9,13 +9,19 @@ let isError = false;
 
 
 function cleanInputString(str) {
-    const strArray = str.split('');
-    const cleanStrArray = [];
+    const regex = /[+-\s]/g;
+    return str.replace(regex, "");
     
-    for (let i = 0; i < strArray.length; i++) {
-        if (!strArray.includes(["+", "-", " "]))
-            cleanStrArray.push(strArray[1])
-        
-    }
 
 }
+
+
+function isInvalidInput(str) {
+    const regex = /e/i;
+}
+
+
+// for (let i = 0; i < strArray.length; i++) {
+//     if (!strArray.includes(["+", "-", " "]))
+//         cleanStrArray.push(strArray[1])
+// }
