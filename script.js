@@ -11,4 +11,11 @@ let isError = false;
 function cleanInputString(str) {
     const strArray = str.split('');
     const cleanStrArray = [];
+    
+    for (let i = 0; i < strArray.length; i++) {
+        if (!strArray.includes(["+", "-", " "]))
+            cleanStrArray.push(strArray[1])
+        
+    }
+
 }
