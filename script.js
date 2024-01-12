@@ -17,8 +17,15 @@ function cleanInputString(str) {
 
 
 function isInvalidInput(str) {
-    const regex = /e/i;
+    const regex = /\d+e\d+/i;
+    return str.match(regex);
 }
+
+function addEntry() {
+    const targetId = "#" + entryDropdown.ariaValueMax;
+    const targetInputContainer = document.querySelector(`{targetId} .input-container`);
+}
+
 
 
 // for (let i = 0; i < strArray.length; i++) {
