@@ -21,14 +21,11 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
+
 function addEntry() {
-    const targetId = "#" + entryDropdown.ariaValueMax;
     const targetInputContainer = document.querySelector(`{targetId} .input-container`);
+    const entryNumber = targetInputContainer.querySelectorAll('input[type= "text"]').length;
+    constHTMLString =``;
 }
 
 
-
-// for (let i = 0; i < strArray.length; i++) {
-//     if (!strArray.includes(["+", "-", " "]))
-//         cleanStrArray.push(strArray[1])
-// }
