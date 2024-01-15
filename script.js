@@ -21,11 +21,15 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-
 function addEntry() {
     const targetInputContainer = document.querySelector(`{targetId} .input-container`);
     const entryNumber = targetInputContainer.querySelectorAll('input[type= "text"]').length;
-    constHTMLString =``;
+    constHTMLString = `
+    <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+    <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
+    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>`;
 }
+
+
 
 
